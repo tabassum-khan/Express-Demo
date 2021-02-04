@@ -1,0 +1,22 @@
+body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn{
+    margin: 5% auto;
+}
+
+h1{
+    margin: 5% auto;
+}
+
+#myform{
+    margin-top: 10%;
+}
+
+.form-control{
+    margin-bottom: 10px;
+}

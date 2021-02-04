@@ -1,0 +1,32 @@
+<!--todo: In Ejs, to output data, we use: <%= %> and to output JavaScript, we use: <% %>-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Demo</title>
+
+    <!--Bootsrap CSS-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <%- include('C:/Users/Abdul/Desktop/tabassum/Express-Demo/views/partials/nav'); -%>
+
+    <h1 class="display-4">Welcome to the profile of <%= data.name %></h1>
+    <p><strong>Age:</strong> <%= data.age %></p>
+    <p><strong>Job:</strong> <%= data.job %></p>
+    <p><strong>Hobbies are:</strong></p>
+    <% data.hobbies.forEach(function(item){ %>
+        <li><%= item %></li>
+    <% }); %>
+
+</body>
+
+</html>
